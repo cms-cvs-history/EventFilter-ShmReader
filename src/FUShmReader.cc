@@ -114,7 +114,7 @@ int FUShmReader::fillRawData(EventID& eID,
   
   // reading the cell is finished (new state will be 'isProcessing')
   shmBuffer_->finishReadingRawCell(newCell);
-  eID=EventID(runNumber_,1U,evtNumber_);
+  eID=EventID(runNumber_,evtNumber_);
   data=event_;
   
   return evtNumber_;
